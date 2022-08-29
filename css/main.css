@@ -1,0 +1,784 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    direction: rtl;
+    height: 3560px;
+}
+.header{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header .logo{
+    width: 24%;
+    padding: 30px 20px;
+    font-weight: bold;
+}
+.header .logo a{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    color: rgb(94, 94, 94);
+}
+.header .logo a .s1{
+    color: rgb(235, 142, 3);
+}
+.header .logo a .s2{
+    color: rgb(3, 204, 204);
+}
+.header .nav{
+    width: 65%;
+    padding: 30px 20px;
+    font-weight: bold;
+}
+.header .nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.header .nav ul li{
+margin-left: 5px;
+padding: 10px;
+}
+.header .nav ul li .get{
+    font-size: 16px;
+    color: rgb(94, 94, 94);
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+.header .nav ul li a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: rgb(110, 106, 106);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.header .nav ul li a:hover{
+ color: blue;
+}
+.all{
+    width: 70%;
+    margin: auto;
+}
+.all .top{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+}
+.all .top .moving{
+    text-align: center;
+    width: 50%;
+}
+.all .top .moving img{
+    width: 100%;
+    animation-name:animate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.all .top .text{
+    width: 50%;
+}
+.all .top .text h1{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 150px;
+    font-weight: bold;
+    font-size: 48px;
+    color: rgb(40, 40, 40);
+}
+.all .top .text h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(150, 150, 150);
+    margin: 32px 0px;
+}
+.all .top .text a{
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(66, 182, 218);
+    font-size: 16px;
+    color: aliceblue;
+    border-width: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px 1px rgb(20, 100, 150);
+    padding: 12px 30px;
+    transition: 0.5s;
+}
+.all .top .text a:hover{
+    background: aqua;
+    color: black;
+}
+.section1{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    transition: 1s;
+}
+.section1 .look{
+    background-color: rgb(245, 245, 245);
+    width: 47%;
+    padding: 20px 20px 40px;
+}
+.section1 .look i{
+    color: aqua;
+    font-size: 30px;
+    margin: 5px 5px 10px 0px;
+}
+.section1 .look h1{
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 15%;
+}
+.section1 .look p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: rgb(150, 150, 150);
+    line-height: 150%;
+}
+.section1 .why{
+    background-color: rgb(245, 245, 245);
+    width: 47%;
+    padding: 20px 20px 40px;
+}
+.section1 .why i{
+    color: aqua;
+    font-size: 30px;
+    margin: 5px 5px 10px 0px;
+}
+.section1 .why h1{
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 15%;
+}
+.section1 .why p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: rgb(150, 150, 150);
+    line-height: 150%;
+}
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.section2 .photo{
+    width: 48%;
+}
+.section2 .photo img{
+    width: 100%;
+}
+.section2 .who{
+    width: 48%;
+}
+.section2 .who h1{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 100, 100);
+    margin-bottom: 10px;
+}
+.section2 .who p{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 100, 100);
+    line-height: 150%;
+}
+.section3{
+    background-color: rgb(245, 245, 245);
+    color: rgb(100, 100, 100);
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section3 .service{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.section3 .service h1{
+    margin-bottom: 20px;
+}
+.section3 .service p{
+    font-size: 22px;
+}
+.mini-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    
+}
+.section3 .mini-all .mini-i{
+    width: 23%;
+    padding: 30px 5px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.section3 .mini-all .mini-i:hover{
+    color:rgb(33, 49, 61);
+}
+.section3 .mini-all .mini-i i{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: rgb(66, 182, 218);
+    
+}
+
+.section3 .mini-all .mini-i h2{
+    cursor: pointer;
+    width: auto;
+}
+.section3 .client{
+    margin-bottom: 30px;
+}
+.section3 .client h2{
+    margin-bottom: 20px;
+}
+.section3 .client p{
+    font-size: 22px;
+}
+.section4{
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(100, 100, 100);
+  }
+  .section4 .contact{
+    width: 100%;
+  }
+  
+  .section4 .contact h2{
+    margin-bottom: 20px;
+  }
+  .section4 .contact p{
+    margin-bottom: 30px;
+  }
+  .section4 .info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .section4 .info .location{
+    width: 40%;
+    background-color: rgb(245, 245, 245);
+    border-top: 5px solid rgb(66, 182, 218);
+    border-bottom: 5px solid rgb(66, 182, 218);
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .section4 .info .location .adress,
+  .section4 .info .location .email,
+  .section4 .info .location .mobile{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+  }
+  
+  .section4 .info .location .adress i,
+  .section4 .info .location .email i,
+  .section4 .info .location .mobile i{
+    width: 10%;
+    height: 35px;
+    padding-top: 15px;
+    color: rgb(66, 182, 218);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+  .section4 .info .location .adress:hover i,
+  .section4 .info .location .email:hover i,
+  .section4 .info .location .mobile:hover i{
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(66, 182, 218) !important;
+  }
+  
+  .section4 .info .location .adress div,
+  .section4 .info .location .email div,
+  .section4 .info .location .mobile div{
+    width: 90%;
+    text-align: right;
+  }
+  
+  .section4 .info .location .adress div>h3,
+  .section4 .info .location .email div>h3,
+  .section4 .info .location .mobile div>h3{
+    margin-bottom: 10px;
+    color: rgb(100, 100, 100);
+  }
+  .section4 .info .location .adress div>p,
+  .section4 .info .location .email div>p,
+  .section4 .info .location .mobile div>p{
+    color: rgb(130, 130, 130);
+  }
+  .section4 .info .location iframe{
+    width: 95%;
+    height: 400px;
+    margin: auto;
+  }
+  
+  .section4 .info .contact-f{
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    border-top: 5px solid rgb(66, 182, 218);
+    border-bottom: 5px solid rgb(66, 182, 218);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section4 .info .contact-f form{
+    width: 100%;
+  }
+  .section4 .info .contact-f form .first{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .section4 .info .contact-f form .first div{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .section4 .info .contact-f form .first div>label{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 15px;
+  }
+  .section4 .info .contact-f form .first div>input{
+    width: 95%;
+    line-height: 28px;
+  }
+  .section4 .info .contact-f form .second{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .section4 .info .contact-f form .second label{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  .section4 .info .contact-f form .second input{
+    width: 97.5%;
+    line-height: 28px;
+  }
+  .section4 .info .contact-f form .third{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .section4 .info .contact-f form .third label{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  .section4 .info .contact-f form .third textarea{
+    width: 97.5%;
+  }
+  .section4 .info .contact-f form button{
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0px solid black;
+    background-color: rgb(66, 182, 218);
+    color: white;
+  }
+  .section5{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    padding: 50px 20px 20px;
+  }
+  .section5 .name{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .section5 .name h2{
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+  }
+  .section5 .icon{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .section5 .icon i{
+    font-size: 24px;
+    color: rgb(80, 80, 80);
+    padding: 5px;
+    margin-left: 5px;
+    background-color:rgb(230, 230, 230);
+  }
+  .section5 .copy-right{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(120, 120, 120);
+  }
+  .section5 .copy-right .devolber{
+    width: 50%;
+    text-align: right;
+    font-size: 14px;
+  }
+  .section5 .copy-right .devolber p a{
+    color: rgb(0, 190, 0);
+    text-decoration: none;
+  }
+  .section5 .copy-right .last{
+    width: 50%;
+    text-align: left;
+    font-size: 14px;
+  }
+  .section5 .copy-right .last span{
+    font-weight: bold;
+  }
+@keyframes animate{
+    25%{
+        transform: translatey(50px);
+    }
+    50%{
+        transform: translatey(0px);
+    }
+    75%{
+        transform: translatey(50px);
+    }
+    /*=======midea======*/
+}
+@media(max-width: 1600px){
+  .all{
+    width: 80%;
+  }
+  .section4 .info .location{
+    width: 38%;
+  }
+  .section4 .info .contact-f{
+    width: 48%;
+  }
+}
+/* ==== Media 1500px ==== */
+@media(max-width: 1500px){
+  .all{
+    width: 90%;
+  }
+  .section1 h2{
+    width: 25%;
+  }
+  .section1 .look,
+  .section1 .why{
+  width: 44%;
+}
+
+}
+/* ==== Media 1250px ==== */
+@media(max-width: 1250px){
+  .header .logo{
+    padding: 30px 5px;
+  }
+}
+
+/* ==== Media 1200px ==== */
+@media(max-width: 1200px){
+  .header .logo{
+    width: 100%;
+    text-align: center;
+}
+  .header .nav{
+    width: 100%;
+    text-align: center;
+}
+  .header .nav ul li{
+    width: 30%;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+.section3 .mini-all .mini-i{
+  width: 30%;
+}
+}
+
+
+/* ==== Media 950px ==== */
+@media(max-width: 950px){
+  .all .top .moving{
+    width: 100%;
+  }
+  .all .top .text{
+    width: 100%;
+  }
+  .all .top .moving img{
+    width: 70%;
+  }
+  .section1{
+    flex-wrap: wrap;
+  }
+  .section1 .look,
+  .section1 .why{
+  width: 90%;
+  margin-bottom: 10px;
+}
+.all .top .text h1{
+  padding-top: 75px;
+}
+.section2 .photo{
+  width: 100%;
+}
+.section2 .who{
+  width: 100%;
+}
+.section3 .mini-all .mini-i{
+  width: 45%;
+}
+.section4 .info{
+  flex-wrap: wrap;
+
+}
+.section4 .info .location{
+  width: 100%;
+  margin-bottom: 40px;
+}
+.section4 .info .location .adress i,
+.section4 .info .location .email i,
+.section4 .info .location .number i{
+  width: 40px;
+  height: 30px;
+}
+.section4 .info .contact-f{
+  width: 100%;
+}
+
+.section5 .copy-right{
+  flex-direction: column-reverse;
+}
+
+.section5 .copy-right .devolber,
+.section5 .copy-right .last{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+}
+
+
+@media(max-width: 1600px){
+  .all{
+    width: 80%;
+  }
+  .section4 .info .location{
+    width: 38%;
+  }
+  .section4 .info .contact-f{
+    width: 48%;
+  }
+}
+/* ==== Media 1500px ==== */
+@media(max-width: 1500px){
+  .all{
+    width: 90%;
+  }
+  .section1 h2{
+    width: 25%;
+  }
+  .section1 .look,
+  .section1 .why{
+  width: 44%;
+}
+
+}
+/* ==== Media 1250px ==== */
+@media(max-width: 1250px){
+  .header .logo{
+    padding: 30px 5px;
+  }
+}
+
+/* ==== Media 1200px ==== */
+@media(max-width: 1200px){
+  .header .logo{
+    width: 100%;
+    text-align: center;
+}
+  .header .nav{
+    width: 100%;
+    text-align: center;
+}
+  .header .nav ul li{
+    width: 30%;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+.section3 .mini-all .mini-i{
+  width: 30%;
+}
+}
+
+
+/* ==== Media 950px ==== */
+@media(max-width: 950px){
+  .all .top .moving{
+    width: 100%;
+  }
+  .all .top .text{
+    width: 100%;
+  }
+  .all .top .moving img{
+    width: 70%;
+  }
+  .section1{
+    flex-wrap: wrap;
+  }
+  .section1 .look,
+  .section1 .why{
+  width: 90%;
+  margin-bottom: 10px;
+}
+.all .top .text h1{
+  padding-top: 75px;
+}
+.section2 .photo{
+  width: 100%;
+}
+.section2 .who{
+  width: 100%;
+}
+.section3 .mini-all .mini-i{
+  width: 45%;
+}
+.section4 .info{
+  flex-wrap: wrap;
+
+}
+.section4 .info .location{
+  width: 100%;
+  margin-bottom: 40px;
+}
+.section4 .info .location .adress i,
+.section4 .info .location .email i,
+.section4 .info .location .number i{
+  width: 40px;
+  height: 30px;
+}
+.section4 .info .contact-f{
+  width: 100%;
+}
+
+.section5 .copy-right{
+  flex-direction: column-reverse;
+}
+
+.section5 .copy-right .devolber,
+.section5 .copy-right .last{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+}
+
+
+/* ==== Media 750px ==== */
+@media(max-width: 750px){
+  .header .nav ul li{
+    width: 40%;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+.all .top .moving img{
+  width: 100%;
+}
+.all .top .text h1{
+  padding-top: 0px;
+}
+}
+
+
+/* ==== Media 600px ==== */
+@media(max-width: 600px){
+  .all{
+    width: 98%;
+  }
+  .header .nav ul li{
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+.section1 h2{
+  width: 100%;
+}
+.all .top .text,
+.section1 .look,
+.section1 .why,
+.section2 .who{
+  text-align: center;
+}
+.section3 .mini-all .mini-i{
+  width: 90%;
+}
+
+.section4 .info{
+  width: 100%;
+}
+
+}
+
+/* ==== Media 500px ==== */
+@media(max-width: 500px){
+  .section4 .info .location .adress div,
+  .section4 .info .location .email div,
+  .section4 .info .location .number div{
+    width: 85%;
+}
+}
+@media(max-width: 350px){
+  .section4 .info .location .adress div,
+  .section4 .info .location .email div,
+  .section4 .info .location .number div{
+    width: 80%;
+}
+}
